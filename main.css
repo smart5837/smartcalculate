@@ -1,0 +1,274 @@
+.body{
+    display: grid;
+    grid-template-columns: 400px 370px 300px;
+    background-color:#A9A9A9;
+    height: 600px;
+}
+.row-1 {
+    background-color:  #d8d6d6;
+    height: 65px;
+    width: 370px;
+}
+#inputs {
+    border:2px solid #A9A9A9;
+    height: 47px;
+    width: 359px;
+    margin-left: 3px;
+    margin-top: 5px;
+}
+.main {
+    border: 2px solid rgb(107, 101, 101);
+    height: 400px;
+    width: 370px;
+    position: relative;
+    background-color: #A9A9A9;
+    top: 100px;
+}
+.row-2 {
+    background-color: #ffffff;
+    height: 50px;
+    /* margin-top: 5px; */
+    display: grid;
+    grid-template-columns: 200px 40px 30px 40px;
+}
+.topbutt {
+    height: 50px;
+}
+.top {
+    position: relative;
+    bottom: 15px;
+    width: 200px;
+    line-height: 45px;
+    text-align: center;
+    /* border:1px solid black; */
+    font-size: 24px;
+    /* background-color: #ffffff; */
+
+}
+.symbol{
+        position: relative;
+        left: 3px;
+        top:3px;
+        padding: 13px 15px;
+}
+.symb {
+    position: relative;
+    left: 19px;
+    top:3px;
+    padding: 13px 18px
+}
+.symb-1 {
+    position: relative;
+    left: 42px;
+    top:3px;
+    padding: 13px 15px;
+}
+.row-3 {
+    display: grid;
+    grid-template-columns: 62px 62px 62px 60px 60px 60px;
+    height: 55px;
+    margin-top: 3px;
+} 
+#butt-2 {
+    height: 54px;
+} 
+ .symbs  {
+    position: relative;
+    top:3px;
+    left: 2px;
+    padding: 10px 24px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: steelblue;
+}
+.symb-3  {
+    position: relative;
+    left: 5px;
+    top:3px;
+    padding: 10px 24px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: lightcoral;
+}
+.symb-4  {
+    position: relative;
+    left: 8px;
+    top:3px;
+    padding: 10px 24px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: lightblue;
+}
+.symb-5  {
+    position: relative;
+    left: 8px;
+    top:3px;
+    padding: 10px 26px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:lightblue;
+}
+.symb-7  {
+    position: relative;
+    left: 4px;
+    top:3px;
+    padding: 10px 26px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: lightseagreen;
+}
+.symb-6 {
+    position: relative;
+    left: 2px;
+    top:3px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: lightseagreen;
+}
+.numb-1 {
+    position: relative;
+    left: 12px;
+    top:3px;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: steelblue;
+}
+.numb-2 {
+    position: relative;
+    left: 8px;
+    top:3px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: lightcoral;
+}
+.numb-3 {
+    position: relative;
+    left: 2px;
+    top:3px;
+    padding: 13px 15px;
+    font-size: 16px;
+    font-weight: 600; 
+    background-color: lightseagreen;
+}
+.numb-4 {
+    position: relative;
+    left: 12px;
+    top:3px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: steelblue;
+}
+/* .numb-5 { */
+    /* position: relative; */
+    /* left: 8px; */
+    /* top:3px; */
+    /* padding: 10px 18px; */
+    /* font-size: 20px; */
+    /* font-weight: 500; */
+    /* background-color: lightcoral; */
+/* } */
+.numb-6 {
+    position: relative;
+    left: 2px;
+    top:3px;
+    padding: 13px 12px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: lightseagreen; 
+}
+.row-4 {
+    display: grid;
+    grid-template-columns: 62px 62px 62px 60px 60px 60px;
+    height: 55px;
+}
+.row-5 {
+    display: grid;
+    grid-template-columns: 62px 62px 62px 60px 60px 60px;
+    height: 55px;
+}
+.numb-5 {
+    position: relative;
+    left: 8px;
+    top:3px;
+    padding: 10px 19px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: lightcoral;
+}
+ .numb-7 {
+    position: relative;
+    left: 8px;
+    top:3px;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: lightcoral;
+}
+.row-6 {
+    display: grid;
+    grid-template-columns: 62px 62px 62px 60px 60px 60px;
+    height: 55px;
+}
+.row-7 {
+    display: grid;
+    grid-template-columns: 62px 62px 62px 60px 60px 60px;
+    height: 55px;
+}
+.numb-9 {
+    position: relative;
+    left: 7px;
+    top:3px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: lightcoral;
+}
+ .numb-8 { 
+    position: relative;
+    left: 1px;
+    top:3px;
+    padding: 10px 11px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: lightseagreen;
+}
+.numb-11 { 
+    position: relative;
+    left: 1px;
+    top:3px;
+    padding: 9px 16px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: lightseagreen;
+}
+.numb-12 { 
+    position: relative;
+    left: 2px;
+    top:3px;
+    padding: 9px 13px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: lightseagreen;
+}
+.numb-13 { 
+    position: relative;
+    left: 7px;
+    top:3px;
+    padding: 9px 17px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: lightcoral;
+}
+.numb-10 {
+    position: relative;
+    left: 11px;
+    top:3px;
+    padding: 12px 19px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: steelblue;
+}

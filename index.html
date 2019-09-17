@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kufre sunday</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <head>
+        <script language="javascript"></script>
+    </head>
+    <div class="body">
+        <div></div>
+        <div class="main">
+            <form class="mains" name="mains">
+                     <div class=row-1>
+                         <input type="text" id="inputs" name="inputs"  disabled>
+                     </div>
+                     <div class="row-2">
+                         <div class="topbutt"><h1 class="top">Kufre calculator</h1></div>
+                         <div class="topbutt"><input type="button" class="symbol" name="symb" value="On" onclick="on()"></div>
+                         <div class="topbutt"><input type="button" class="symb" name="symb" value="X" onclick="back()"></div>
+                         <div class="topbutt"><input type="button" class="symb-1" name="symb" value="Del" onclick="clean()"></div>                         
+                     </div>
+                     <!-- <br> -->
+                     <div class="row-3">
+                         <div id="butt-2"><input type="button" class="symbs" name="numbOne" value="7" onclick="insert(7)"></div>
+                         <div id="butt-2"><input type="button" class="symb-3" name="numbOne" value="8" onclick="insert(8)"></div>
+                         <div id="butt-2"><input type="button" class="symb-4" name="numbOne" value="9" onclick="insert(9)"></div>
+                         <div id="butt-2"><input type="button" class="numb-1" name="numbOne" value="%" onclick="percent()"></div>
+                         <div id="butt-2"><input type="button" class="numb-2" name="numbOne" value="/" onclick="insert('/')"></div>
+                         <div id="butt-2"><input type="button" class="numb-3" name="numbOne" value="Sin" onclick="sin()"></div>
+                     </div>
+                     <div class="row-4">
+                        <div id="butt-2"><input type="button" class="symbs" name="numbOne" value="4" onclick="insert(4)"></div>
+                        <div id="butt-2"><input type="button" class="symb-3" name="numbOne" value="5" onclick="insert(5)"></div>
+                        <div id="butt-2"><input type="button" class="symb-4" name="numbOne" value="6" onclick="insert(6)"></div>
+                        <div id="butt-2"><input type="button" class="numb-4" name="numbOne" value="&#94;" onclick="root('&#94')"></div>
+                        <div id="butt-2"><input type="button" class="numb-5" name="numbOne" value="*" onclick="insert('*')"></div>
+                        <div id="butt-2"><input type="button" class="numb-6" name="numbOne" value="Cos" onclick="cos()"></div>
+                    </div>
+                    <div class="row-5">
+                        <div id="butt-2"><input type="button" class="symbs" name="numbOne" value="3" onclick="insert(3)"></div>
+                        <div id="butt-2"><input type="button" class="symb-3" name="numbOne" value="2" onclick="insert(2)"></div>
+                        <div id="butt-2"><input type="button" class="symb-4" name="numbOne" value="1" onclick="insert(1)"></div>
+                        <div id="butt-2"><input type="button" class="numb-4" name="numbOne" value="x&#50;" onclick="square()"></div>
+                        <div id="butt-2"><input type="button" class="numb-7" name="numbOne" value="+" onclick="insert('+')"></div>
+                        <div id="butt-2"><input type="button" class="numb-8" name="numbOne" value="Tan" onclick="tan()"></div>
+                    </div>
+                    <div class="row-6">
+                        <div id="butt-2"><input type="button" class="symbs" name="numbOne" value="&#177;" onclick="exp('&#177')"></div>
+                        <div id="butt-2"><input type="button" class="symb-3" name="numbOne" value="0" onclick="insert(0)"></div>
+                        <div id="butt-2"><input type="button" class="symb-5" name="numbOne" value="&#46;" onclick="insert('&#46')"></div>
+                        <div id="butt-2"><input type="button" class="numb-10" name="numbOne" value="&#960;" onclick="insert('3.1415192')"></div>
+                        <div id="butt-2"><input type="button" class="numb-9" name="numbOne" value="-" onclick="insert('-')"></div>
+                        <div id="butt-2"><input type="button" class="numb-11" name="numbOne" value="00" onclick="insert('00')"></div>
+                    </div>
+                    <div class="row-7">
+                        <div id="butt-2"><input type="button" class="symb-6" name="numbOne" value="(" onclick="insert('(')"></div>
+                        <div id="butt-2"><input type="button" class="symb-7" name="numbOne" value=")" onclick="insert(')')"></div>
+                        <div id="butt-2"><input type="button" class="symb-5" name="numbOne" value="," onclick="insert(',')"></div>
+                        <div id="butt-2"><input type="button" class="numb-10" name="numbOne" value="&radic;" onclick="sqrt()"></div>
+                        <div id="butt-2"><input type="button" class="numb-13" name="numbOne" value="=" onclick="equal()"></div>
+                        <div id="butt-2"><input type="button" class="numb-12" name="numbOne" value="Off" onclick="off()"></div>
+                    </div>
+            </form>
+        </div>
+        <div></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+     <script>
+              function insert(value){
+                        mains.inputs.value = mains.inputs.value+value;
+              }
+              function root(value){
+                  mains.inputs.value = mains.inputs.value+value;
+                  var exp = mains.inputs.value * mains.input.value;
+                  mains.inputs.value = exp;     
+              }
+              function clean(){
+                  mains.inputs.value = "";
+              }
+              function back(){
+                  var exp = mains.inputs.value;
+                  mains.inputs.value = exp.substring(0, exp.length - 1);
+              }
+              function sin(){
+                var exp = mains.inputs.value;
+                       mains.inputs.value = Math.sin(exp);
+              }
+              function cos(){
+                var exp = mains.inputs.value;
+                       mains.inputs.value = Math.cos(exp);
+              }
+              function tan(){
+                  var exp = mains.inputs.value;
+                       mains.inputs.value = Math.tan(exp);
+              }
+              
+                  function exp(){
+                    //   var exp = mains.input.value;
+                      mains.inputs.value = Math.exp(mains.inputs.value);
+                    }
+                    function square(){
+                        mains.inputs.value = eval(mains.inputs.value) * eval(mains.inputs.value);
+                    }
+
+                    function sqrt(){
+                        mains.inputs.value = Math.sqrt(mains.inputs.value);
+                    }
+
+                    function percent(){
+                        var exp = mains.inputs.value * 0.01;
+                        mains.inputs.value = eval(exp);
+                    }
+
+                    function on(){
+                        var exp = "";
+                        mains.inputs.value = exp;
+                    }
+
+                    function off(){
+                        var exp = " ";
+                        // if(insert()){
+                        mains.inputs.value = exp;
+                        // }
+                        // else{
+                            // mains.inputs.value = " ";
+                        // }
+                    }            
+                  function equal(){
+                    try {
+                        var exp = mains.inputs.value;
+                      mains.inputs.value = eval(exp);  
+
+                    } 
+                    catch (e) {
+                      mains.inputs.value = "syntax error"
+                    } 
+                  }                 
+            
+
+     </script>
+
+
+
+</body>
+</html>
